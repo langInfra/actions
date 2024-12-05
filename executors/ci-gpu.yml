@@ -12,9 +12,9 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: "3.7"
-      - name: Install latest stable 3.x jina version
+      - name: Install latest stable 3.x langinfra version
         run: |
-          pip install jina
+          pip install langinfra
       - name: Python requirements
         run: pip install -r gpu_requirements.txt -r tests/requirements.txt
       - name: Run GPU tests
